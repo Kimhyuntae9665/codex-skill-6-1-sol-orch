@@ -1,0 +1,30 @@
+{
+  "title": "6.1 Sol orchestration flow",
+  "status": "proposed",
+  "basis": "skills/6-1-sol-orch/SKILL.md at commit 0ca552f7f01c8c8de92ed13b5b7292f9e100acd7, blob f6bb7407523e1698fc5c361c674c26a8f98a0ed3",
+  "description": "When delegation is useful, a Sol 6.1 root assigns bounded work to a Luna explorer (top), Luna researcher (middle), and Sol 6.1 worker (bottom). Results return to Sol 6.1 for integration and verification. The dashed branch adds Astra independent review only when concrete risk or a verification gap warrants it. The lower bypass skips review. Both paths return to Sol 6.1 for final checks. Icons are original explanatory symbols, not official logos. This is a recommended workflow, not evidence of deployment.",
+  "disclaimer": "Recommended workflow; on-demand agents; original explanatory symbols, not official model logos. See the adjacent README caption.",
+  "width": 1280,
+  "height": 590,
+  "asset_manifest": "assets.json",
+  "nodes": [
+    {"id": "root", "asset": "sol", "role": "orchestrator", "x": 70, "y": 240},
+    {"id": "explorer", "asset": "luna", "role": "explorer", "x": 330, "y": 60},
+    {"id": "researcher", "asset": "luna", "role": "researcher", "x": 330, "y": 240},
+    {"id": "worker", "asset": "sol", "role": "worker", "x": 330, "y": 420},
+    {"id": "integrator", "asset": "sol", "role": "integration and verification", "x": 590, "y": 240},
+    {"id": "reviewer", "asset": "astra", "role": "optional independent review", "x": 850, "y": 240},
+    {"id": "final", "asset": "sol", "role": "final checks", "x": 1110, "y": 240}
+  ],
+  "edges": [
+    {"source": "root", "target": "explorer"},
+    {"source": "root", "target": "researcher"},
+    {"source": "root", "target": "worker"},
+    {"source": "explorer", "target": "integrator"},
+    {"source": "researcher", "target": "integrator"},
+    {"source": "worker", "target": "integrator"},
+    {"source": "integrator", "target": "reviewer", "conditional": true},
+    {"source": "reviewer", "target": "final"},
+    {"source": "integrator", "target": "final", "route": "bypass", "path": "M690 316C770 316 740 440 800 440H1000C1080 440 1030 316 1110 316"}
+  ]
+}

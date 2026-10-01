@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <title>Original sun symbol for Sol</title>
+  <g stroke="#ECA526" stroke-width="4" stroke-linecap="round">
+    <path d="M32 5V11M32 53V59M5 32H11M53 32H59M13 13L17 17M47 47L51 51M13 51L17 47M47 17L51 13"/>
+  </g>
+  <circle cx="32" cy="32" r="14" fill="#F3B43B"/>
+</svg>

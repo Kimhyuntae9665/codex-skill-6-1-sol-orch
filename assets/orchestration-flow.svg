@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="590" viewBox="0 0 1280 590" role="img" aria-labelledby="flow-title flow-desc">
+<title id="flow-title">6.1 Sol orchestration flow</title>
+<desc id="flow-desc">When delegation is useful, a Sol 6.1 root assigns bounded work to a Luna explorer (top), Luna researcher (middle), and Sol 6.1 worker (bottom). Results return to Sol 6.1 for integration and verification. The dashed branch adds Astra independent review only when concrete risk or a verification gap warrants it. The lower bypass skips review. Both paths return to Sol 6.1 for final checks. Icons are original explanatory symbols, not official logos. This is a recommended workflow, not evidence of deployment.</desc>
+<defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="#354152" opacity="0.65"/></pattern><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1L9 5L1 9Z" fill="#AEB8CA"/></marker></defs>
+<rect width="1280" height="590" rx="18" fill="#131923"/>
+<rect x="1" y="1" width="1278" height="588" rx="18" fill="url(#dots)" stroke="#293446"/>
+<path id="edge-root-explorer" d="M170 290C250.0 290 250.0 110 330 110" fill="none" stroke="#AEB8CA" stroke-width="2.2" marker-end="url(#arrow)"/>
+<path id="edge-root-researcher" d="M170 290C250.0 290 250.0 290 330 290" fill="none" stroke="#AEB8CA" stroke-width="2.2" marker-end="url(#arrow)"/>
+<path id="edge-root-worker" d="M170 290C250.0 290 250.0 470 330 470" fill="none" stroke="#AEB8CA" stroke-width="2.2" marker-end="url(#arrow)"/>
+<path id="edge-explorer-integrator" d="M430 110C510.0 110 510.0 290 590 290" fill="none" stroke="#AEB8CA" stroke-width="2.2" marker-end="url(#arrow)"/>
+<path id="edge-researcher-integrator" d="M430 290C510.0 290 510.0 290 590 290" fill="none" stroke="#AEB8CA" stroke-width="2.2" marker-end="url(#arrow)"/>
+<path id="edge-worker-integrator" d="M430 470C510.0 470 510.0 290 590 290" fill="none" stroke="#AEB8CA" stroke-width="2.2" marker-end="url(#arrow)"/>
+<path id="edge-integrator-reviewer" d="M690 290C770.0 290 770.0 290 850 290" fill="none" stroke="#AEB8CA" stroke-width="2.2" stroke-dasharray="7 7" marker-end="url(#arrow)"/>
+<path id="edge-reviewer-final" d="M950 290C1030.0 290 1030.0 290 1110 290" fill="none" stroke="#AEB8CA" stroke-width="2.2" marker-end="url(#arrow)"/>
+<path id="edge-integrator-final" d="M690 316C770 316 740 440 800 440H1000C1080 440 1030 316 1110 316" fill="none" stroke="#AEB8CA" stroke-width="2.2" marker-end="url(#arrow)"/>
+<g id="node-root" aria-label="orchestrator"><rect x="70" y="240" width="100" height="100" rx="18" fill="#FFFFFF"/><g transform="translate(88 258)"><g stroke="#ECA526" stroke-width="4" stroke-linecap="round">
+    <path d="M32 5V11M32 53V59M5 32H11M53 32H59M13 13L17 17M47 47L51 51M13 51L17 47M47 17L51 13" />
+  </g>
+  <circle cx="32" cy="32" r="14" fill="#F3B43B" />
+</g><text x="120" y="372" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" fill="#DFE6F1">Sol 6.1</text></g>
+<g id="node-explorer" aria-label="explorer"><rect x="330" y="60" width="100" height="100" rx="18" fill="#FFFFFF"/><g transform="translate(348 78)"><path d="M44 9A25 25 0 1 0 44 55A23 23 0 0 1 44 9Z" fill="#3C8FA6" />
+</g><text x="380" y="192" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" fill="#DFE6F1">Luna</text></g>
+<g id="node-researcher" aria-label="researcher"><rect x="330" y="240" width="100" height="100" rx="18" fill="#FFFFFF"/><g transform="translate(348 258)"><path d="M44 9A25 25 0 1 0 44 55A23 23 0 0 1 44 9Z" fill="#3C8FA6" />
+</g><text x="380" y="372" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" fill="#DFE6F1">Luna</text></g>
+<g id="node-worker" aria-label="worker"><rect x="330" y="420" width="100" height="100" rx="18" fill="#FFFFFF"/><g transform="translate(348 438)"><g stroke="#ECA526" stroke-width="4" stroke-linecap="round">
+    <path d="M32 5V11M32 53V59M5 32H11M53 32H59M13 13L17 17M47 47L51 51M13 51L17 47M47 17L51 13" />
+  </g>
+  <circle cx="32" cy="32" r="14" fill="#F3B43B" />
+</g><text x="380" y="552" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" fill="#DFE6F1">Sol 6.1</text></g>
+<g id="node-integrator" aria-label="integration and verification"><rect x="590" y="240" width="100" height="100" rx="18" fill="#FFFFFF"/><g transform="translate(608 258)"><g stroke="#ECA526" stroke-width="4" stroke-linecap="round">
+    <path d="M32 5V11M32 53V59M5 32H11M53 32H59M13 13L17 17M47 47L51 51M13 51L17 47M47 17L51 13" />
+  </g>
+  <circle cx="32" cy="32" r="14" fill="#F3B43B" />
+</g><text x="640" y="372" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" fill="#DFE6F1">Sol 6.1</text></g>
+<g id="node-reviewer" aria-label="optional independent review"><rect x="850" y="240" width="100" height="100" rx="18" fill="#FFFFFF"/><g transform="translate(868 258)"><path d="M32 5C37 24 40 27 59 32C40 37 37 40 32 59C27 40 24 37 5 32C24 27 27 24 32 5Z" fill="#8970C7" />
+</g><text x="900" y="372" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" fill="#DFE6F1">Astra</text></g>
+<g id="node-final" aria-label="final checks"><rect x="1110" y="240" width="100" height="100" rx="18" fill="#FFFFFF"/><g transform="translate(1128 258)"><g stroke="#ECA526" stroke-width="4" stroke-linecap="round">
+    <path d="M32 5V11M32 53V59M5 32H11M53 32H59M13 13L17 17M47 47L51 51M13 51L17 47M47 17L51 13" />
+  </g>
+  <circle cx="32" cy="32" r="14" fill="#F3B43B" />
+</g><text x="1160" y="372" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" fill="#DFE6F1">Sol 6.1</text></g>
+</svg>

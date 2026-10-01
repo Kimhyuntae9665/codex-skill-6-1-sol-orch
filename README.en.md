@@ -4,6 +4,12 @@
 
 [한국어](README.md) · [Skill instructions](skills/6-1-sol-orch/SKILL.md) · [Apache-2.0](LICENSE)
 
+![Sol 6.1 delegates to a Luna explorer, Luna researcher, and Sol worker, integrates and verifies results, optionally requests Astra review, and performs final checks](assets/orchestration-flow.png)
+
+This is the recommended flow when delegation is useful. The middle column contains the **explorer, researcher, and worker**, from top to bottom. The next Sol handles **integration and verification**; the rightmost Sol handles **final checks**. The dashed edge adds Astra review when needed; the lower bypass skips review.
+
+*The sun, crescent, and star are original explanatory symbols, not official model logos.*
+
 Use explorers and researchers for independent questions, a worker for a scoped implementation, and an independent reviewer when concrete risk justifies it. Small or tightly coupled tasks stay with the root. The skill does not launch every role on every task.
 
 This repository ships instructions and UI metadata, not an executable orchestrator or model configuration. Agent tools and model availability depend on your Codex environment.
@@ -105,6 +111,8 @@ The design avoids unnecessary delegation on small tasks. Token savings and speed
 ## Files and attribution
 
 The installable folder is `skills/6-1-sol-orch`, containing `SKILL.md`, `agents/openai.yaml`, `LICENSE`, and `NOTICE`. License and attribution travel with the folder when installed separately.
+
+The diagram includes an editable [SVG](assets/orchestration-flow.svg), a [PNG preview](assets/orchestration-flow.png), and [graph/asset sources](assets/flow-source/README.md). The original artwork is also covered by this repository's Apache-2.0 license.
 
 The local skill was developed from the orchestration approach in [donvito/codex-astra-luna-orchestrator](https://github.com/donvito/codex-astra-luna-orchestrator), based on commit `f1de1b8729c8ccfb7978321b4764c58bd34c8493`. Changes include Sol 6.1 root/worker roles, on-demand delegation, optional Astra review, and host-aware execution boundaries. See [NOTICE](NOTICE).
 

@@ -1,0 +1,26 @@
+{
+  "sol": {
+    "name": "Sol 6.1",
+    "path": "icons/sol.svg",
+    "sha256": "5b95b54628748423d497ff146ffe72ba148ce6ba5a19c21f1d9b14aabb22d68b",
+    "revision": "1",
+    "source": "Original explanatory artwork created for this repository, 2026-10-01",
+    "license_note": "Apache-2.0; not an official OpenAI or model logo; no trademark affiliation claimed"
+  },
+  "luna": {
+    "name": "Luna",
+    "path": "icons/luna.svg",
+    "sha256": "8412975fe357485946d22bf183e333731131ae2fc46d7ea4b5b18c922022d3f9",
+    "revision": "1",
+    "source": "Original explanatory artwork created for this repository, 2026-10-01",
+    "license_note": "Apache-2.0; not an official OpenAI or model logo; no trademark affiliation claimed"
+  },
+  "astra": {
+    "name": "Astra",
+    "path": "icons/astra.svg",
+    "sha256": "786171f60d98885771541045472318ec8142a28e142729a0517ba737ee088923",
+    "revision": "1",
+    "source": "Original explanatory artwork created for this repository, 2026-10-01",
+    "license_note": "Apache-2.0; not an official OpenAI or model logo; no trademark affiliation claimed"
+  }
+}
