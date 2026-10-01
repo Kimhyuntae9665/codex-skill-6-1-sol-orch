@@ -1,0 +1,7 @@
+interface:
+  display_name: "6.1 Sol Orch"
+  short_description: "Lean Sol 6.1, Luna, and Astra agent tree"
+  default_prompt: "Use $6-1-sol-orch to coordinate this task with on-demand agents, then integrate and verify the result."
+
+policy:
+  allow_implicit_invocation: true
